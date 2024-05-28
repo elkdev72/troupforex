@@ -20,6 +20,8 @@ from django.urls import path,include
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("",include("forex.urls")),
+    path('accounts/', include('users.urls')),  # Changed from 'users/' to 'accounts/'
+
     
 
 ]
